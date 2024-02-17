@@ -1,0 +1,20 @@
+INFO 2024-02-08 22:43:34,340 Watching for file changes with StatReloader
+ERROR 2024-02-08 22:43:38,071 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Слава\Учеба Python_GeekBrains\Фреймворк_Django\Sem1\projsem\Django_Homework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Слава\Учеба Python_GeekBrains\Фреймворк_Django\Sem1\projsem\Django_Homework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Слава\Учеба Python_GeekBrains\Фреймворк_Django\Sem1\projsem\Django_Homework\myhomework\hwapp1\views.py", line 16, in main
+    logger.info('Main page accessed')
+    ^^^^^^
+NameError: name 'logger' is not defined
+ERROR 2024-02-08 22:43:38,076 "GET / HTTP/1.1" 500 67337
+INFO 2024-02-08 22:44:15,752 D:\Слава\Учеба Python_GeekBrains\Фреймворк_Django\Sem1\projsem\Django_Homework\myhomework\hwapp1\views.py changed, reloading.
+INFO 2024-02-08 22:44:16,762 Watching for file changes with StatReloader
+INFO 2024-02-08 22:44:20,926 Main page accessed
+INFO 2024-02-08 22:44:20,928 "GET / HTTP/1.1" 200 736
+INFO 2024-02-08 22:44:26,890 About page accessed
+INFO 2024-02-08 22:44:26,891 "GET /about/ HTTP/1.1" 200 683
